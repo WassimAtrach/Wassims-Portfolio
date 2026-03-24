@@ -1034,3 +1034,30 @@ footer {
     }
 }
 
+@media (max-width: 600px) {
+    .project-card[data-images] .project-body h3,
+    .project-card[data-images] .project-body p,
+    .project-card[data-images] .project-body .tags {
+        display: none;
+    }
+
+    .project-card[data-images] .project-actions {
+        margin-top: 0;
+    }
+
+    .project-card[data-images] .project-link {
+        border-color: transparent;
+        background: linear-gradient(120deg, #5cf7ff, #65d7ff 45%, #8bff5a);
+        color: #06111f;
+        font-weight: 800;
+        box-shadow: 0 10px 22px rgba(92, 247, 255, 0.28);
+    }
+
+    .project-card[data-images] .project-link:hover {
+        transform: translateY(-1px);
+        background: linear-gradient(120deg, #8bff5a, #5cf7ff 55%, #77e8ff);
+        color: #04111d;
+        box-shadow: 0 12px 24px rgba(139, 255, 90, 0.28);
+    }
+}
+
